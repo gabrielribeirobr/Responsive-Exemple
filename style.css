@@ -38,20 +38,52 @@ main {
 
 section { 
     background-color: #ccff99;
+    height: 100px;
 }
 
 article {
     background-color: #99ff99;
+    height: 100px;
 }
 
 aside { 
     background-color: #99ffcc; 
+    height: 100px;
 }
 
 summary {
      background-color: #99ccff;
+     height: 100px;
  }
 
 footer { 
     background-color: #cc99ff;
+    height: 100px;
  }
+
+ @media(min-width: 768px){
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 5px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    section{
+        height: 450px;
+    }
+    article{
+        height: 450px;
+    }
+    aside {
+        width: 28%;
+        height: 450px;
+    }
+}
+
